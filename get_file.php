@@ -2,5 +2,5 @@
 
     header('Content-Type: text/plain');
 
-    echo file_get_contents($_REQUEST['name']);
+    echo file_get_contents('/var/log/'.$_REQUEST['name']);
     
