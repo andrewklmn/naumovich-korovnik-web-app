@@ -17,7 +17,7 @@ define("FASMEB", 10);
 define("BOILER", 11);
 define("BACK", 12);
 
-define("DELTA_FOR_ACTIVE_MODE", 0.5);
+define("DELTA_FOR_ACTIVE_MODE", 0.3);
 
 define("MIN_TEMP", 5);
 define("WINTER_TEMP", -5);
@@ -121,7 +121,9 @@ function save_text_line_to_file($filename, $text, $max_file_size){
        fclose($empty);
     }
     if (filesize($filename) > $max_file_size) {
-        file_put_contents($filename, $text."\n");
+        $content = explode("\n",file_get_contents($filename));
+        $new_content = array_slice($content, -24 * 8);
+        file_put_contents($filename, implode("\n", $new_content)."\n".$text."\n");
     } else {
         file_put_contents($filename, $text."\n", FILE_APPEND);
     }    
