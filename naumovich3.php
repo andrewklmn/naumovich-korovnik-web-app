@@ -41,7 +41,7 @@ define('MAX_LOG_SIZE', 240);
 define("URL",'http://127.0.0.1/naumovich/command.php?command=');
 define('LOG_FILE_PATH','/var/log/naumovich3.log');
 define('STATE_LOG_FILE_PATH','/var/log/naumovich3_states.log');
-define('MAX_LOG_SIZE', 10000);
+define('MAX_LOG_SIZE', 17000);
 
 
 $min_temp = (isset($argv[1])) ? $argv[1] : MIN_TEMP;
