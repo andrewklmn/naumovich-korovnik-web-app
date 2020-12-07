@@ -13,7 +13,7 @@
                 "nightTemp": "'.$params[3].'",
                 "weekendTemp": "'.$params[4].'"
 }';
-            
+            // TODO - check range of input parameters
             file_put_contents('/var/www/html/naumovich/config.json', $new_config);
             
             echo 'New config set';
