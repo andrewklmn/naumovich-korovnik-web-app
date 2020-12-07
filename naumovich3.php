@@ -17,7 +17,7 @@ define("FASMEB", 10);
 define("BOILER", 11);
 define("BACK", 12);
 
-define("DELTA_FOR_ACTIVE_MODE", 0.3);
+define("DELTA_FOR_ACTIVE_MODE", 0.5);
 
 define("MIN_TEMP", 5);
 define("WINTER_TEMP", -5);

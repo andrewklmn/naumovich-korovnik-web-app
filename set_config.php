@@ -16,7 +16,7 @@
             
             file_put_contents('/var/www/html/naumovich/config.json', $new_config);
             
-            echo 'New config is setted';
+            echo 'New config set';
             exit;
         }
         echo 'Wrong config!';
