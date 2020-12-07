@@ -32,11 +32,8 @@ $heater_modes = array(
     ECO => "ECO",
     STANDART => "STANDART"
 );
-/*
-define("URL",'http://10.8.0.66/naumovich/command.php?command=');
-define('LOG_FILE_PATH','/home/user/naumovich3.log');
-define('MAX_LOG_SIZE', 240);
- */
+
+include 'read_config.php';
 
 define("URL",'http://127.0.0.1/naumovich/command.php?command=');
 define('LOG_FILE_PATH','/var/log/naumovich3.log');
