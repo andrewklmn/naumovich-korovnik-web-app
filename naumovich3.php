@@ -33,18 +33,15 @@ $heater_modes = array(
     STANDART => "STANDART"
 );
 
-include 'read_config.php';
-
 define("URL",'http://127.0.0.1/naumovich/command.php?command=');
 define('LOG_FILE_PATH','/var/log/naumovich3.log');
 define('STATE_LOG_FILE_PATH','/var/log/naumovich3_states.log');
 define('MAX_LOG_SIZE', 17000);
 
-
-$min_temp = (isset($argv[1])) ? $argv[1] : MIN_TEMP;
-
-
 echo "Naumovich 3.0 heating system for korovnik\n";
+echo "======================================\n";
+// read suitable config for this moment
+include 'read_config.php';
 echo "======================================\n";
 
 $state = get_answer_for_AT_commant('AT get all');
