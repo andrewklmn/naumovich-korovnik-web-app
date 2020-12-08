@@ -36,7 +36,7 @@ $heater_modes = array(
 define("URL",'http://127.0.0.1/naumovich/command.php?command=');
 define('LOG_FILE_PATH','/var/log/naumovich3.log');
 define('STATE_LOG_FILE_PATH','/var/log/naumovich3_states.log');
-define('MAX_LOG_SIZE', 17000);
+define('MAX_LOG_SIZE', 37000);
 
 echo "Naumovich 3.0 heating system for korovnik\n";
 echo "======================================\n";
